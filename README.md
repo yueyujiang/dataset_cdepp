@@ -1,5 +1,8 @@
 # Dataset for Scaling deep phylogenetic placement to ultra-large reference trees: a tree-aware ensemble approach
 
+## Software
+The software is available in PyPi and can be installed using `pip install depp-test`
+
 ## Data description
 
 ### dataset\_cdepp/WoL/Placement
