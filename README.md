@@ -1,7 +1,9 @@
-# Dataset for Scaling deep phylogenetic placement to ultra-large reference trees: a tree-aware ensemble approach
+# Dataset and software usage for CDEPP
+
+CDEPP: Scaling DEPP phylogenetic placement to ultra-large reference trees: a tree-aware ensemble approach
 
 ## Software
-The software is combined with DEPP software. It is available in PyPi and can be installed using `pip install depp-test`
+The software is combined with DEPP software. It is available in PyPi and can be installed using `pip install depp`
 
 ## Usage
 ### Training 
