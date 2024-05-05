@@ -1,7 +1,27 @@
 # Dataset for Scaling deep phylogenetic placement to ultra-large reference trees: a tree-aware ensemble approach
 
 ## Software
-The software is available in PyPi and can be installed using `pip install depp-test`
+The software is combined with DEPP software. It is available in PyPi and can be installed using `pip install depp-test`
+
+## Usage
+### Training 
+`train_depp -t $backbone_tree -s $backbone_seq -g $gpu_id -o $outdir -c True`
+* `-c`: whether to use the CDEPP. if `-c False`, use normal DEPP.
+* `-t`: backbone tree file in newick format
+* `-s`: backbone sequence file in fasta format
+* `-o`: output directory to store 
+
+### Testing
+`depp_distance.py seqdir=$outdir/test_seqs_add_repr query_seq_file=$query_seq_file model_path=$outdir/cluster-depp.pth outdir=$output_dir` 
+* `$outdir`: the same path as the `$outdir` in the training step
+* `$output_dir`: the output directory to store the distance matrix
+* `query_seq_file`: input query sequence file
+* `model_path`: the path of the trained model
+
+### Placement
+Use APPLES2 for placement
+* Install using `pip install apples`
+* `run apples.py -d $distance_matrix file -t $backbone_tree_file -f 0 -b 5`
 
 ## Data description
 
