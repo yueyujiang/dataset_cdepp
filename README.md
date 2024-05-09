@@ -7,8 +7,8 @@ The software is combined with DEPP software. It is available in PyPi and can be 
 
 ## Usage
 ### Training 
-`train_depp -t $backbone_tree -s $backbone_seq -g $gpu_id -o $outdir -c True`
-* `-c`: whether to use the CDEPP. if `-c False`, use normal DEPP.
+`train_cluster_depp.sh -t $backbone_tree -s $backbone_seq -g $gpu_id -o $outdir`
+# * `-c`: whether to use the CDEPP. if `-c False`, use normal DEPP.
 * `-t`: backbone tree file in newick format
 * `-s`: backbone sequence file in fasta format
 * `-o`: output directory to store 
